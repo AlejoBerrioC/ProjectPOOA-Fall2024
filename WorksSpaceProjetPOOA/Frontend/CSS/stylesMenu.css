@@ -22,22 +22,21 @@ a {
 }
 
 .container{
-    width: 100%;
-    padding: 0 15px;
-    box-sizing: border-box;
+    width: 100% !important;
+    padding: 0 15px !important;
+    box-sizing: border-box !important;
 }
 
 .table{
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    overflow: hidden;
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: auto !important;
+    overflow: hidden !important;
 }
 
 .table-title {        
 	padding-bottom: 15px;
 	background: #1E646E;
-	color: #fff;
 	padding: 16px 30px;
 	min-width: 100%;
 	border-radius: 10px 10px 0 0;
@@ -49,21 +48,21 @@ a {
 }
 
 .table-content{
-    overflow-x: auto;
+    overflow-x: auto !important;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
+    width: 100% !important;
+    border-collapse: collapse !important;
 }
 
 th, td {
-    border-bottom: 1px solid #999;
+    border-bottom: 1px solid #999 !important;
+    text-align: center !important;
 }
 
 .table-title .btn{
     float: right;
-    color: white;
     background: #B2A59F;
     border-radius: 5px;
     padding: 2px 5px;
@@ -84,6 +83,13 @@ th, td {
     background: #1e636e3a;
 }
 
+.modal-footer .btn-secondary{
+    background: #B2A59F;
+}
+
+.modal-footer .btn-primary{
+    background: #023459;
+}
 
 
 
@@ -113,7 +119,7 @@ li {
 
 h1,
 h2 {
-    color: #B2A59F;
+    color: #B2A59F !important;
 }
 
 h3 {
@@ -128,10 +134,10 @@ h3 {
 }
 
 .btn:hover {
-    color: #023459;
-    background: white;
-    padding: 3px 8px;
-    border: 2px solid #023459;
+    color: #023459 !important;
+    background: white !important;
+    padding: 3px 8px !important;
+    border: 2px solid #023459 !important;
 }
 
 .title {
@@ -183,7 +189,7 @@ td {
 }
 
 .container {
-    position: absolute;
+    position: absolute !important;
     right: 0;
     width: 100vw;
     height: 100vh;
