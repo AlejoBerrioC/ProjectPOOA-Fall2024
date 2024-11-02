@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="./CSS/stylesMenu.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Employees Panel: Little Nakamas</title>
 </head>
 <body>
@@ -15,10 +18,9 @@
             <div class="table-title">
                 <div class="row">
                     <h1>Manage <b>Employees</b></h1>
-                </div>
-                <div class="add-delete-boutons">
-                    <a href="#" class="btn"><img src="./Images/Tables/add.png"><span>Add New Employee</span></a>
-                    <a href="#" class="btn"><img src="./Images/Tables/deleteT.png"><span>Delete</span></a>
+                    <div class="add-delete-boutons">
+                        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#delete-employee-modal"><img src="./Images/Tables/deleteT.png"><span>Delete</span></button>
+                    </div>
                 </div>
             </div>
             <div class="table-content">
@@ -28,6 +30,7 @@
                     <th>ID</th>
                     <th>Name</th>
                     <th>Last Name</th>
+                    <th>Type</th>
                     <th>Actions</th>
                     </thead>
                     <tbody>
@@ -41,9 +44,9 @@
                             <td>1</td>
                             <td>John</td>
                             <td>Doe</td>
+                            <td>Administrator</td>
                             <td>
-                                <a title="Edit"><img src="./Images/Tables/edit.png"></a>
-                                <a title="Delete"><img src="./Images/Tables/delete.png"></a>
+                                <a title="Delete" data-toggle="modal" data-target="#delete-employee-modal"><img src="./Images/Tables/delete.png"></a>
                             </td>
                         </tr>
                         <tr>
@@ -56,13 +59,36 @@
                             <td>2</td>
                             <td>Juan</td>
                             <td>Berrio</td>
+                            <td>Teacher</td>
                             <td>
-                                <a title="Edit"><img src="./Images/Tables/edit.png"></a>
-                                <a title="Delete"><img src="./Images/Tables/delete.png"></a>
+                                <a title="Delete" data-toggle="modal" data-target="#delete-employee-modal"><img src="./Images/Tables/delete.png"></a>
                             </td>
                         </tr>
                     </tbody>
                 </table>
+            </div>
+        </div>
+    </div>
+    <!-- Delete Employee Modal -->
+    <div id="delete-employee-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">
+                        <h3 class="modal-title">Delete Employee</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Are you sure you want to delete these records?</p>
+                        <p class="text-warning"><small>This action cannot be undone.</small></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Delete</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

@@ -21,7 +21,26 @@ a {
     color: inherit;
 }
 
+/*Css pour le manue dropdown Employees*/
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    top: 100%;
+    z-index: 1;
+}
+
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: #023459;
+}
 
 /* Css Existant */
 * {
@@ -38,10 +57,12 @@ body {
 
 a {
     text-decoration: none;
+    width: 100%;
 }
 
 li {
     list-style: none;
+    width: 100%;
 }
 
 h1,

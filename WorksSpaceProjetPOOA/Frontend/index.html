@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Admin Panel: Little Nakamas</title>
 </head>
 
@@ -17,20 +18,41 @@
         </div>
         <div class="side-menu-items">
             <ul>
-                <li><img src="./Images/Index/dashboard (2).png" alt="">&nbsp; <a href="dashboard.html" target="contentFrame"><span>Dashboard</span></a> </li>
-                <li><img src="./Images/Index/reading-book (1).png" alt="">&nbsp;<a href="Students.html" target="contentFrame"><span>Students</span></a></li>
-                <li><img src="./Images/Index/teacher2.png" alt="">&nbsp;<a href="Employees.html" target="contentFrame"><span>Teachers</span></a> </li>
-                <li><img src="./Images/Index/school.png" alt="">&nbsp;<a href="Schools.html" target="contentFrame"><span>Schools</span></a> </li>
-                <li><img src="./Images/Index/parent.png" alt="">&nbsp;<a href="Parents.html" target="contentFrame"><span>Parents</span></a> </li>
-                <li><img src="./Images/Index/payment.png" alt="">&nbsp;<span>Income</span> </li>
-                <li><img src="./Images/Index/help-web-button.png" alt="">&nbsp; <span>Help</span></li>
-                <li><img src="./Images/Index/settings.png" alt="">&nbsp;<span>Settings</span> </li>
+                <li>
+                    <a href="dashboard.html" target="contentFrame">
+                        <img src="./Images/Index/dashboard (2).png" alt="">&nbsp;Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="Students.html" target="contentFrame">
+                        <img src="./Images/Index/reading-book (1).png" alt="">&nbsp;Students
+                    </a>
+                </li>               
+                <li class="dropdown"><a href="Employees.html" target="contentFrame"><img src="./Images/Index/employees.png" alt="">&nbsp;Employees</a>
+                    <ul class="dropdown-content">
+                        <li><a href="Teachers.html" target="contentFrame"><img src="./Images/Index/teacher.png" alt="">&nbsp;Teachers</a></li>
+                        <li><a href="Admins.html" target="contentFrame"><img src="./Images/Index/admins.png" alt="">&nbsp;Admins</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="Schools.html" target="contentFrame">
+                        <img src="./Images/Index/school.png" alt="">&nbsp;Schools
+                    </a> 
+                </li>
+                <li><a href="Parents.html" target="contentFrame">
+                        <img src="./Images/Index/parent.png" alt="">&nbsp;Parents
+                    </a> 
+                </li>
+                <li><img src="./Images/Index/payment.png" alt="">&nbsp;Income</li>
+                <li><img src="./Images/Index/help-web-button.png" alt="">&nbsp;Help</li>
+                <li><img src="./Images/Index/settings.png" alt="">&nbsp;Settings </li>
             </ul>
         </div>
     </div>
     <div class="containerIndex">
         <iframe src="./Dashboard.html" name="contentFrame" id="contentFrame" width="100%" height="100%"></iframe>
     </div>
+
 </body>
 
 </html>
