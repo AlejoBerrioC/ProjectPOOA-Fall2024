@@ -1,62 +1,139 @@
 /*Nouveaux style CSS*/
-.logo-garderie{
-    max-width: 30%;
+
+.container{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.login-box {
+    position:absolute;
+    right: 0;
+    width: 30vw;
+    height: 100vh;
+    background: #B2A59F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-box label{
+    font-size: large;
+}
+
+.login-box input{
+    padding: 5px 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+.login-box button{
+    padding: 5px 10px;
+    margin: 20px 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.background{
+    display: grid;
+    place-items: center;
+    margin-right: 30vw;
+    height: 100vh; 
+    background-color: #023459;
+    font-size: x-large;
+}
+
+
+.logo-garderie {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+.logo-garderie img {
+    width: 100%;
     height: auto;
 }
 
-.brand-name{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    max-width: 100%;
-    flex-wrap: nowrap;
-    background-color: #023459;
-    box-sizing: border-box;
-    padding: 50px;
-    box-sizing: border-box;
-    z-index: 1;
-}
 
-.brand-name h1{
-    margin: 0 0 0 10px;
-    flex: 1;
-}
+@media (max-width: 768px) {
+    .container{
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    .login-box {
+        width: auto;
+        height: auto;
+        padding: 20px;
+        position: relative;
+        
+    }
 
-a {
-    color: inherit;
-}
+    .background {
+        margin-right: 0;
+        height: auto;
+        padding: 20px;
+    }
 
-.side-menu-items {
-    width: 20vw; 
-    height: 90vh; 
-    overflow-y: auto; 
-    position: fixed;
-    top: 10vh; 
-    left: 0;
-    right: 0;
-    padding-top: 10px; 
-    overflow-x: hidden;
-}
+    .logo-garderie {
+        max-width: 80px;
+    }
 
-/*Css pour le manue dropdown Employees*/
-.dropdown{
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    top: 100%;
-    z-index: 1;
+    .login-box label {
+        font-size: medium;
+    }
 }
 
 
-.dropdown:hover .dropdown-content {
-    display: block;
-    background-color: #023459;
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        height: 100vh;
+    }
+
+    .login-box {
+        width: auto;
+        height: auto;
+        padding: 20px;
+        position: relative;
+    }
+
+    .background {
+        height: 100vh;
+        width: 100vw;
+        margin-right: 0;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .background img{
+        width: 80vw;
+        height: auto;
+    }
+
+    .logo-garderie {
+        max-width: 60px;
+        margin-bottom: 10px;
+    }
+
+    .login-box label {
+        font-size: small;
+    }
+
+    .login-box button {
+        padding: 8px 15px;
+        margin: 10px;
+    }
 }
+
+
 
 /* Css Existant */
 * {
@@ -304,7 +381,6 @@ td {
 @media screen and (max-width: 1050px) {
     .side-menu li {
         font-size: 18px;
-        padding-left: 0;
     }
 }
 
